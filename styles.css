@@ -13,6 +13,7 @@ background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
+position: fixed;
   
 }
 .box{
@@ -66,13 +67,13 @@ display: grid;
 
     transform: scale(1.02);
 
-    border-radius: 9px;
+    border-radius: 10px;
 }
 .snake  {
   background: #EBE788;
   border: .25vmin solid white;
 
-    border-radius: 12px;
+    border-radius: 15vw;
 }
 .food{
   background: #774060;
@@ -111,15 +112,15 @@ display: grid;
   display: block;
 }
 h2{
-  margin: 10vmin 20vmin;
+  margin: 10vmin 25vmin;
   color: #3A0438;
   text-shadow: 0px 5px 10px #423333AB;
   font-weight: 800;
   
 }
 .newbtn{
- position: relative;
- top:-5vmin;
+ position: absolute;
+ top:-4vmin;
  left: 27vmin;
  padding: 2vmin;
  border-radius: 9px;
@@ -127,6 +128,7 @@ h2{
  color: #5D0B0B;
  background: #6DE0FFD1;
 }
+
 #right{
   position: fixed ;
   width: 10vmin;
@@ -175,6 +177,7 @@ i{
 }
 
  @media (max-width: 1200px)  {
+    
   .box{
     position: absolute;
     top:4vw;
@@ -187,28 +190,34 @@ i{
     position: absolute;
     top: 1.5vw;
     right:35px;
-    font-size: 36px;
+    font-size: 3.5vw;
     font-weight: 600;
 }
 #scoreBox{
   position: absolute;
     top: 7vw;
-    right:13vw;
-    font-size: 36px;
+    right:10vw;
+    font-size: 3vw;
     font-weight: 600;
 }
+.head{
+  border-radius: 10vw;
+}
   .gameover{
-    font-size: 38px;
+    font-size: 4vw;
   }
+  h2 {
+  margin: 10vmin 18vmin;
+}
   .newbtn{
     height: 8vmin;
     width: 20vmin;
-    font-size: 25px;
+    font-size: 3vw;
     font-weight: 700;
   }
 }
 @media (max-width: 768px) {
-  
+    
     .box{
       position: absolute;
     top:3vw;
@@ -216,12 +225,13 @@ i{
     height: 18vmin;
     width: 35vmin;
 }
-  
+
+ 
   #hiscoreBox{
    position: absolute;
     top: 1.7vw;
     right:25px;
-    font-size: 25px;
+    font-size: 3.5vw;
     
     font-weight: 600;
     
@@ -230,12 +240,18 @@ i{
   position: absolute;
     top: 7vw;
     right:25vw;
-    font-size: 25px;
+    font-size: 3vw;
     font-weight: 600;
 }
-.gameover{
-  font-size: 25px;
+.head{
+  border-radius: 10vw;
 }
+.gameover{
+  font-size: 3vw;
+}
+h2{
+    margin: 10vmin 18vmin;
+  }
  .newbtn{
     height: 8vmin;
     width: 20vmin;
@@ -244,7 +260,7 @@ i{
   }
 }
 @media (max-width: 480px) {
-  
+ 
   
   .box{
     height: 14vmin;
@@ -254,25 +270,31 @@ i{
     #hiscoreBox{
     position: absolute;
     top: 2vw;
-    right:10px;
-    font-size: 14px;
+    right:8px;
+    font-size: 3.5vw;
     font-weight: 600;
     
 }
 #scoreBox{
   position: absolute;
     top: 7vw;
-    right:55px;
-    font-size: 14px;
+    right:40px;
+    font-size: 3.5vw;
     font-weight: 600;
 }
+.head {
+  border-radius: 10vw;
+}
 .gameover{
-    font-size: 15px;
+    font-size: 4vw;
+  }
+  h2{
+    margin: 10vmin 18vmin;
   }
  .newbtn{
     height: 8vmin;
     width: 20vmin;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: 700;
   }
 }

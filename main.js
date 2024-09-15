@@ -21,7 +21,7 @@ let score =0;
 let lastPaintTime=0;
 let snakeArr=[{x:13,y:15}];
 food = {x: 6, y: 7};
- let count =4;
+ let count =5.;
  
    
        function main(ctime) {
@@ -75,7 +75,7 @@ function gameEngine() {
         score = 0; 
        
     }
-    
+   
     if(snakeArr[0].y === food.y && snakeArr[0].x ===food.x){
 
         foodSound.play();
@@ -83,8 +83,8 @@ function gameEngine() {
         score += 1;
         if(score>hiscoreval){
             hiscoreval = score;
-            localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
-            hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
+            localStorage.setItem("High Score", JSON.stringify(hiscoreval));
+            hiscoreBox.innerHTML = "High Score: " + hiscoreval;
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
