@@ -1,0 +1,278 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+.body{
+  
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeDElqHMBGKa9XyI7jns-nfbyt5Qj4HnK4Q&usqp=CAU");
+  min-height: 100vh;
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+.box{
+  position: absolute;
+    top: 5px;
+    right: 13px;
+    height: 18vmin;
+    width: 35vmin;
+    background: #B2D3E3;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 0 8px 10px #000000;
+}
+#scoreBox{
+
+    position: absolute;
+
+    top: 35px;
+    right: 57px;
+    font-size: 17px;
+    color: #4F4141;
+    font-weight: 600;
+    font-family: 'New Tegomin', serif;
+    
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    font-size: 17px;
+    color: #4F4141;
+    font-weight: 600;
+    font-family: 'New Tegomin', serif;
+}
+#board{
+  margin: 40vmin 4vmin;
+height: 90vmin;
+width: 92vmin;
+background-image: linear-gradient(lightblue,lightyellow);
+box-shadow: 0 5px 20px #528FDD;
+border: 2px solid #3C92CF;
+display: grid;
+  grid-template-rows: repeat(18,1fr);
+  grid-template-columns: repeat(18,1fr);
+  
+}
+.head{
+  background: #A79101;
+  border: 2px solid rgb(34, 4, 34); 
+
+    transform: scale(1.02);
+
+    border-radius: 9px;
+}
+.snake  {
+  background: #EBE788;
+  border: .25vmin solid white;
+
+    border-radius: 12px;
+}
+.food{
+  background: #774060;
+  border: .25vmin solid black;
+
+    border-radius: 50%;
+}
+.blur{
+  position: absolute;
+  background: #DDD7D68A;
+  width: 100vmin;
+  height: 100vh;
+}
+.blur{
+  display: none;
+}
+.show{
+  display: block;
+}
+.gameover{
+  position: absolute;
+  top: 60vmin;
+  right: 12vmin;
+  width: 75vmin;
+  height: 38vmin;
+  box-shadow: 0 7px 15px #000000E6;
+  background :  #52666EE6;
+  border-radius: 9px;
+  border: 1px solid #000000AB;
+}
+.gameover{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+h2{
+  margin: 10vmin 20vmin;
+  color: #3A0438;
+  text-shadow: 0px 5px 10px #423333AB;
+  font-weight: 800;
+  
+}
+.newbtn{
+ position: relative;
+ top:-5vmin;
+ left: 27vmin;
+ padding: 2vmin;
+ border-radius: 9px;
+ box-shadow: 0 4px 10px #000000;
+ color: #5D0B0B;
+ background: #6DE0FFD1;
+}
+#right{
+  position: fixed ;
+  width: 10vmin;
+  height: 10vmin;
+  background: #8A8FC5;
+  position: absolute;
+  top: 81vh;
+  left: 85vmin;
+  
+  box-shadow: 0 2px 15px #F3EBEB;
+}
+#left{
+  position: fixed ;
+  width: 10vmin;
+  height: 10vmin;
+  background: #8A8FC5;
+  position: absolute;
+  top: 81vh;
+  left: 55vmin;
+box-shadow: 0 2px 15px #FFF0F0;
+}
+#up{
+  position: fixed ;
+  width: 10vmin;
+  height: 10vmin;
+  background: #8A8FC5;
+  position: absolute;
+  top: 75vh;
+  left: 70vmin;
+ box-shadow: 0 2px 15px #FFF0F0;
+}
+#down{
+  position: fixed ;
+  width: 10vmin;
+  height: 10vmin;
+  background: #8A8FC5;
+  position: absolute;
+  top: 88vh;
+  left: 70vmin;
+  box-shadow: 0 2px 15px #FFF0F0;
+}
+
+i{
+  
+  font-size: 6vmin;
+}
+
+ @media (max-width: 1200px)  {
+  .box{
+    position: absolute;
+    top:4vw;
+    
+    right:8vw;
+    height: 14vmin;
+    width: 32vmin;
+}
+    #hiscoreBox{
+    position: absolute;
+    top: 1.5vw;
+    right:35px;
+    font-size: 36px;
+    font-weight: 600;
+}
+#scoreBox{
+  position: absolute;
+    top: 7vw;
+    right:13vw;
+    font-size: 36px;
+    font-weight: 600;
+}
+  .gameover{
+    font-size: 38px;
+  }
+  .newbtn{
+    height: 8vmin;
+    width: 20vmin;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  
+    .box{
+      position: absolute;
+    top:3vw;
+    right:30px;
+    height: 18vmin;
+    width: 35vmin;
+}
+  
+  #hiscoreBox{
+   position: absolute;
+    top: 1.7vw;
+    right:25px;
+    font-size: 25px;
+    
+    font-weight: 600;
+    
+}
+#scoreBox{
+  position: absolute;
+    top: 7vw;
+    right:25vw;
+    font-size: 25px;
+    font-weight: 600;
+}
+.gameover{
+  font-size: 25px;
+}
+ .newbtn{
+    height: 8vmin;
+    width: 20vmin;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 480px) {
+  
+  
+  .box{
+    height: 14vmin;
+    width: 30vmin;
+    border-radius: 5px;
+}
+    #hiscoreBox{
+    position: absolute;
+    top: 2vw;
+    right:10px;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+#scoreBox{
+  position: absolute;
+    top: 7vw;
+    right:55px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.gameover{
+    font-size: 15px;
+  }
+ .newbtn{
+    height: 8vmin;
+    width: 20vmin;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
