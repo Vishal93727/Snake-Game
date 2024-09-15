@@ -120,7 +120,7 @@ h2{
 }
 .newbtn{
  position: absolute;
- top:-4vmin;
+ top:22vmin;
  left: 27vmin;
  padding: 2vmin;
  border-radius: 9px;
@@ -210,6 +210,7 @@ i{
   margin: 10vmin 18vmin;
 }
   .newbtn{
+ 
     height: 8vmin;
     width: 20vmin;
     font-size: 3vw;
@@ -253,6 +254,7 @@ h2{
     margin: 10vmin 18vmin;
   }
  .newbtn{
+  
     height: 8vmin;
     width: 20vmin;
     font-size: 10px;
@@ -292,6 +294,7 @@ h2{
     margin: 10vmin 18vmin;
   }
  .newbtn{
+  
     height: 8vmin;
     width: 20vmin;
     font-size: 3vw;
